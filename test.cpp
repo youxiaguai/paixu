@@ -12,7 +12,11 @@ using namespace std;
 
 int main()
 {
+<<<<<<< HEAD
 	int select = 1;
+=======
+	int select = 3;
+>>>>>>> 43609e5c351acbc0ab2f49cebb853dafb443d2d9
 	if (select == 0)
 	{
 		vector<int> arr = { 6,1,2,7,9,3,4,5,10,8 };
