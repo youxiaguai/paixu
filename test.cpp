@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-	int select = 5;
+	int select = 3;
 	if (select == 0)
 	{
 		vector<int> arr = { 6,1,2,7,9,3,4,5,10,8 };
