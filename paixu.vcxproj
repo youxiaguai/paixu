@@ -140,9 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="guibing.h" />
+    <ClInclude Include="heapSort.h" />
     <ClInclude Include="insertSort.h" />
     <ClInclude Include="maopao.h" />
     <ClInclude Include="quickSort.h" />
+    <ClInclude Include="quickSortWenDing.h" />
     <ClInclude Include="shellSort.h" />
     <ClInclude Include="xuanze.h" />
   </ItemGroup>

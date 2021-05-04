@@ -4,13 +4,15 @@
 #include "maopao.h"
 #include "xuanze.h"
 #include "guibing.h"
+#include "heapSort.h"
 #include <vector>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main()
 {
-	int select = 5;
+	int select = 1;
 	if (select == 0)
 	{
 		vector<int> arr = { 6,1,2,7,9,3,4,5,10,8 };
@@ -19,6 +21,7 @@ int main()
 		{
 			cout << arr[i] << " ";
 		}
+		//sort(arr.begin(), arr.end());
 	}
 	if (select == 1)
 	{
@@ -30,7 +33,7 @@ int main()
 			cout << arr[i] << " ";
 		}
 		cout << endl;
-		insertSort(arr, 5);
+		insertSort(arr, arr.size());
 		cout << "ÅÅÐòºó£º" << endl;
 		for (int i = 0; i < arr.size(); i++)
 		{
@@ -113,6 +116,17 @@ int main()
 
 			cout << aa[i] << " ----"<< b[i]<<endl;
 		}
+		
+	}
+	if (select == 6)
+	{
+		vector<int> arr = { 8, 1, 14, 3, 21, 5, 7, 10 };
+		heapSort(arr, arr.size());
+		for (int i = 0; i < arr.size(); i++)
+		{
+			cout << arr[i] << endl;
+		}
+		return 0;
 		
 	}
 	return 0;

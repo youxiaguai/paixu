@@ -19,9 +19,9 @@ void insertSort(vector<int>&arr,int len)
 		temp = arr[i];
 		for (j = i - 1; j >= 0 && arr[j] > temp; j--)
 		{
-			arr[j + 1] = temp;
+			swap(arr[j], arr[j + 1]);
 		}
-		arr[j + 1] = temp;
+		
 	}
 
 }

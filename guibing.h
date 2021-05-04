@@ -125,7 +125,7 @@ void merge_sort(T* a, int len) {
         for (int start = 0; start < len; start += seg + seg) {
             int low = start, mid = min(start + seg, len), high = min(start + seg + seg, len);
             int k = low;
-            int start1 = low, end1 = mid;w
+            int start1 = low, end1 = mid;
             int start2 = mid, end2 = high;
             while (start1 < end1 && start2 < end2)
                 b[k++] = a[start1] < a[start2] ? a[start1++] : a[start2++];

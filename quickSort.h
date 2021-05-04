@@ -34,13 +34,15 @@ void quickSort(int left, int right, vector<int>& arr)
 	}
 	arr[left] = arr[i];//i==j时 arr[i]与base交换，完成一次快排
 	arr[i] = base;
-	cout << "快排一次结束：" << endl;
+	/*cout << "快排一次结束：" << endl;
 	for (int i = 0; i < arr.size(); i++)
 	{
 		cout << arr[i] << " ";
 	}
-	cout << endl;
+	cout << endl;*/
 	quickSort(left, i - 1, arr);//对刚刚排完的数前面的进行快排
 	quickSort(i + 1, right, arr);//对后面的数进行快排
+
+	
 
 }
